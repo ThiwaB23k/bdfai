@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #ECEDB0;
+
+}
+
+.login {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    height: 315px;
+    margin: 0 auto;
+    border: 1px solid red;
+    border-radius: 20px;
+    background: rgba(255,255,255, 0.1);
+    border: 1px solid rgba(255,255,255, 0.4);
+    box-shadow: 0 25px 45px rgba(0,0,0, 0.4);
+    backdrop-filter: blur(15px);
+    z-index: 10;
+    overflow: hidden;
+    padding: 4px;
+    /* float: none; */
+}
+.con-wel, .con-des {
+    align-items: center;
+    justify-items: center;
+    /* border: 1px solid red; */
+    padding: 20px 10px 20px 10px;
+}
+
+.login-container,.hint {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* จัดกลางแนวนอน */
+    align-items: center;
+    padding-top: 20px;
+}
+
+.input {
+    padding: 2px;
+    max-width: 100px;
+    border: none;
+    /* box-shadow: 0 0 2px #000; */
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #515151;
+}
+
+input:focus {
+    border-width: 2px;
+    border-bottom-color: #CD11AA;
+}
+
+.btn {
+    padding: 6px 16px;
+    border: none;
+    font-size: 10px;
+    color: #CD11AA;
+    font-weight: bold;
+    background-color: aliceblue;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #000;
+}
+
+.btn:hover {
+    background: #D9D9D9;
+    transform: translateY(-3px);
+
+}
+
+.des {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    color: #4C4B4A;
+    text-shadow: 2px 2px 5px #cec4b9;
+    padding-left: 15px;
+}
+
+.welcome {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color: #4C4B4A;
+    text-shadow: 2px 2px 5px #cec4b9;
+}
+
+h5 {
+    display: block;
+    font-weight:normal;
+    font-style: italic;
+    color: #cec4b9;
+}

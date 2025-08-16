@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website for Palita</title>
+    <link rel="icon" type="image/png" href="picture/Fai Icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Login.css">
+</head>
+<body style="background-image: url('picture/bg2.png');
+             background-position: center center;
+             background-size: cover;
+             background-repeat: no-repeat;">
+
+    <script src="JS/login.js"></script>
+
+        <div class="login">
+            <div class="con-wel">
+                <h2 class="welcome">
+                Welcome but who are you ?
+                </h2>
+            </div>
+
+            <div class="con-des">
+                <p class="des">
+                This is a website for my beloved. Please confirm that you are the one.
+                </p>
+            </div>
+
+            <div class="login-container">
+                <input class="input" id="input" type="password" placeholder="Your Answer">
+                <button class="btn" onclick="CheckDate()">Enter</button>
+            </div>
+            
+            <div class="hint">
+                <h5>Hint : What is your birthday? (DD/MM/YYYY or DDMMYYYY )</h5>
+            </div>
+
+        </div>
+    <script>
+        const Enter = document.getElementById("input");
+
+    // รอฟังเหตุการณ์กดปุ่ม
+        Enter.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+            CheckDate(); // เรียกฟังก์ชันเดียวกับปุ่ม
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+* {
+    font-family: "Inter", sans-serif;
+  
+}
+/* @keyframes slideShow{
+  0%   {transform:translateX(0)}
+  18%  {transform:translateX(0)}
+  20%  {transform:translateX(-100%)}
+  38%  {transform:translateX(-100%)}
+  40%  {transform:translateX(-200%)}
+  58%  {transform:translateX(-200%)}
+  60%  {transform:translateX(-300%)}
+  78%  {transform:translateX(-300%)}
+  80%  {transform:translateX(-400%)}
+  98%  {transform:translateX(-400%)}
+  100% {transform:translateX(0)}
+} */
+
+@keyframes slideShow {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.gallery {
+  width: 100%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.slides {
+  display: flex;
+  gap: 20px; /* ระยะห่างระหว่างรูป */
+  animation: slideShow 25s infinite linear;
+  margin: 4px;
+}
+
+.slides img {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+.title {
+  font-size: 22px;
+}
